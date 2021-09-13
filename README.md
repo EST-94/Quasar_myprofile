@@ -11,7 +11,20 @@ Twitter Clone created with Quasar Framework, VueJS & Firebase
 - Create a Cloud Firestore database - make sure you choose "Start in test mode"
 
 
-## Install the dependencies
+## Install the dependencies (in building)
+
+// for basic dependencies
+npm install
+
+// for use firebase
+npm install --save firebase
+
+// for use API services (naver)
+npm install --save axios
+npm install --save crypto-js
+
+
+## Install the dependencies (when use)
 ```bash
 npm install
 ```
