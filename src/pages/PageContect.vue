@@ -7,7 +7,7 @@
         class="new-devitt"
         v-model="contect" 
         placeholder="Where should I contect you?"
-        :value="loginState ? contect : ''"
+        :value="loginState.valueOf ? '' : contect"
         counter 
         maxlength="280" 
         autogrow
@@ -44,6 +44,7 @@
 import { defineComponent, ref } from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import { auth, db } from 'src/boot/firebase'
+import { useQuasar } from 'quasar'
 
 // import { send_message } from 'src/apis/naverSMS'
 
@@ -51,21 +52,24 @@ export default defineComponent({
   name: 'PageHome',
   setup() {
     const send_message = require('src/apis/naverSMS')
+    const $q = useQuasar()
 
     var newDeviContent = ref('')
     var contect = ref('')
     var loginState = ref('false')
+    var validationErrors = ref('')
 
     auth.onAuthStateChanged((user) => {
       if (user) {
         loginState.value = 'true'
         console.log("user state isnt null")
-        db.collection("users").where("id", "==", this.mapGetters.id )
-          .get()
+        db.collection("users").where("id", "==", user.email )
+          .get(contect)
           .then((querySnapshot) => {
-              querySnapshot.forEach((doc) => {
-                  console.log(doc.id, " => ", doc.data());
-              });
+            querySnapshot.forEach((doc) => {
+                console.log(doc.id, " => ", doc.data())
+                contect.value = doc.data().contect
+            });
           })
           .catch((error) => {
               console.log("Error getting documents: ", error);
