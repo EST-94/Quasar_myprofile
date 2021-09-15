@@ -14,13 +14,19 @@ Twitter Clone created with Quasar Framework, VueJS & Firebase
 ## Install the dependencies (in building)
 
 // for basic dependencies
+
 npm install
 
+
 // for use firebase
+
 npm install --save firebase
 
+
 // for use API services (naver)
+
 npm install --save axios
+
 npm install --save crypto-js
 
 
