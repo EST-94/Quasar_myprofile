@@ -37,6 +37,17 @@
     </div>
 
     <q-separator size="5px" color="grey-2" class="divider"/>
+          <q-btn 
+            disable="!newDeviContent"
+            color="primary" 
+            class="q-mb-lg"
+            rounded
+            unelevated
+            autogrow
+            label="server tester"
+            @click="tester"
+            no-caps />
+
   </q-page>
 </template>
 
@@ -46,12 +57,10 @@ import { mapActions, mapGetters } from 'vuex'
 import { auth, db } from 'src/boot/firebase'
 import { useQuasar } from 'quasar'
 
-// import { send_message } from 'src/apis/naverSMS'
-
 export default defineComponent({
   name: 'PageHome',
   setup() {
-    const send_message = require('src/apis/naverSMS')
+    const axios = require('axios');
     const $q = useQuasar()
 
     var newDeviContent = ref('')
@@ -93,12 +102,42 @@ export default defineComponent({
             })
         }
         else if(validationErrors.value <= 0) {
-            send_message(contect, newDeviContent);
-         }
+            sendNaver()
+        }
+    }
+
+    let sendNaver = () => {
+      console.log(contect.value)
+      axios.post("/aws/sendnaver", {
+        'contect' : contect.value,
+        'newDeviContent' : newDeviContent.value
+      })
+      .then((res) => {
+        console.log("send req : ", res)
+      })
+      .catch((err) => {
+        console.log("naver send err : ", err)
+      })
+    }
+
+    let tester = () => {
+      proxyRequest()
     }
     
+    let proxyRequest = () => {
+      axios.get("/aws/getList")
+      .then((res) => {
+        console.log("proxy req : ", res)
+      })
+      .catch((err) => {
+        console.log("proxy req error : ", err)
+      })
+    }
+
     return {newDeviContent, contect, loginState,
-            validate}
+            validate,
+            proxyRequest, tester,
+            sendNaver}
   },
 
   computed: {

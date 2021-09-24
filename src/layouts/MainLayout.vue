@@ -109,6 +109,18 @@
       <q-item class="q-pa-md">
         <q-item-section>
           <q-item-label overline class="text-grey">Updating</q-item-label>
+          <q-item-label class="text-weight-bold">Building backend server</q-item-label>
+          <q-item-label caption>building backend server in my AWS.</q-item-label>
+        </q-item-section>
+
+        <q-item-section side top>
+          <q-item-label caption>2021-09-21</q-item-label>
+        </q-item-section>
+      </q-item>
+
+      <q-item class="q-pa-md">
+        <q-item-section>
+          <q-item-label overline class="text-grey">Updating</q-item-label>
           <q-item-label class="text-weight-bold">DB attach done!</q-item-label>
           <q-item-label caption>DB attachment done! log-in function on it's way.</q-item-label>
         </q-item-section>

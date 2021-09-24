@@ -76,7 +76,20 @@ module.exports = configure(function (ctx) {
     devServer: {
       https: false,
       port: 8082,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
+      proxy: {
+          // 프록시 요청을 보낼 api의 시작 부분
+          '/api': {
+              // 프록시 요청을 보낼 서버의 주소
+              target: 'http://localhost:3000',
+              changeOrigin: true
+          },
+          '/aws': {
+              // 프록시 요청을 보낼 서버의 주소
+              target: 'http://3.128.57.20:3000',
+              changeOrigin: true
+          }
+      }
     },
 
     // https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
