@@ -1,7 +1,12 @@
 [build]
 
 [[redirects]]
-  from = "https://devitter.netlify.app"
-  to = "http://3.128.57.20:3000"
+  from = "https://devitter.netlify.app/aws/getList"
+  to = "http://3.128.57.20:3000/aws/getList"
+  status = 301
+  force = true
+
+  from = "https://devitter.netlify.app/aws/sendnaver"
+  to = "http://3.128.57.20:3000/aws/sendnaver"
   status = 301
   force = true
