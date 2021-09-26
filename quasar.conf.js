@@ -86,7 +86,7 @@ module.exports = configure(function (ctx) {
           },
           '/aws': {
               // 프록시 요청을 보낼 서버의 주소
-              target: 'http://3.128.57.20:3000',
+              target: 'https://devitter.com',
               changeOrigin: true
           }
       }

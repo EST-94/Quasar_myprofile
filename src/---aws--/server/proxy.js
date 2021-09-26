@@ -3,6 +3,9 @@ const app = express();
 const send_message = require('../api/naverSMS')
 const http = require('http')
 
+//const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+//const URL = `${PROXY}/v1/search/book.json`;
+
 app.set('port', process.env.PORT || 3000);
 
 var server = app.listen(app.get('port'), function() {
@@ -11,7 +14,7 @@ console.log('Express server listening on port ' + server.address().port);
 
 app.use(express.json())
 
-// http://devitter.com:3000/aws/getList 에 컨트롤러 매핑
+// http://devitter.com/aws/getList 에 컨트롤러 매핑
 app.get('/aws/getList', function(req, res) {
     res.send('proxy connected');
   });
@@ -31,5 +34,3 @@ app.post('/aws/sendnaver', function(req, res) {
         console.log(err)
     }
 });
-
-//app.listen(3000);

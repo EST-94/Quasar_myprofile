@@ -1,0 +1,7 @@
+[build]
+
+[[redirects]]
+  from = "https://devitter.netlify.app/aws/sendnaver"
+  to = "https://devitter.com/aws/sendnaver"
+  status = 301
+  force = true
