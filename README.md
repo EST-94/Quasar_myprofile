@@ -66,4 +66,4 @@ https://www.youtube.com/watch?v=la-0ulfn0_M&list=PL99KBMJE17JwsU5Ugi-uqkxSD6Jf0C
 - signin / signout avaliable.
 
 ### ver 1.31
-- connected with my AWS server (SMS API)
+- connected with my AWS server (SMS API, still avaliable in local)
