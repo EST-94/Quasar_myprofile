@@ -59,11 +59,11 @@ https://www.youtube.com/watch?v=la-0ulfn0_M&list=PL99KBMJE17JwsU5Ugi-uqkxSD6Jf0C
 
 ## Patch note
 
-# ver 1.0
+### ver 1.0
 - basic design, CRUD with firebase
 
-# ver 1.3
+### ver 1.3
 - signin / signout avaliable.
 
-# ver 1.31
+### ver 1.31
 - connected with my AWS server (SMS API)
