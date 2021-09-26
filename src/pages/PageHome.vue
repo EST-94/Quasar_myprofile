@@ -58,7 +58,7 @@
         v-for="devitts in devitts"
         :key="devitts.id"
         >
-                    <!-- for test - connection getter -->
+            <!-- for test - connection getter -->
             <!-- <span class="text-grey-7">
                 userEmail = {{ userEmail }}<br/><br/>
                 userName = {{ userName }} <br/><br/> -->
@@ -139,55 +139,6 @@ import { useRouter } from 'vue-router'
 
 export default defineComponent({
   name: 'PageHome',
-  // data() {
-  //   return{
-  //     newDeviContent: '',
-  //     devitts:[
-  //     ],
-  //   }
-  // },
-  // methods:{
-  //   relativeDate(value) {
-  //     return formatDistance(value, new Date())
-  //   },
-  //   addNewDevitt() {
-  //     let newDevitt = {
-  //       content: this.newDeviContent,
-  //       date: Date.now(),
-  //       liked: false,
-  //       userEmail: '', 
-  //       userName: ''
-  //     }
-  //     db.collection('devitts').add(newDevitt).then(function(docRef) {
-  //       console.log('Document written with ID: ', docRef.id)
-  //     }).catch(function(error) {
-  //       console.error('Error adding document: ', error)
-  //     })
-  //     this.newDeviContent = ''
-  //   },
-  //   deleteDevitt(devitts){
-  //     db.collection('devitts').doc(devitts.id).delete().then(() => {
-  //         console.log("Document successfully deleted!")
-  //     }).catch((error) => {
-  //         console.error("Error removing document: ", error)
-  //     })
-  //   },
-  //   likeDevitt(devitts){
-  //     db.collection('devitts').doc(devitts.id).set({
-  //       userEmail: devitts.userEmail,
-  //       userName: devitts.userName,
-  //       content: devitts.content,
-  //       date: devitts.date,
-  //       liked: !devitts.liked,
-  //     })
-  //     .then(function() {
-  //       console.log('Document successfully written! : liked')
-  //     })
-  //     .catch(function(error) {
-  //       console.error('Error writing document: ', error)
-  //     })
-  //   }
-  // },
 
   setup() {
     const $q = useQuasar()
@@ -290,20 +241,6 @@ export default defineComponent({
         });
     });
     this.authAction()
-    // console.log("user selector called")
-    // if (this.getUserState != null){
-    //   console.log("user state isnt null")
-    //   db.collection("users").where("id", "==", this.getUserState.id )
-    //     .get()
-    //     .then((querySnapshot) => {
-    //         querySnapshot.forEach((doc) => {
-    //             console.log(doc.id, " => ", doc.data());
-    //         });
-    //     })
-    //     .catch((error) => {
-    //         console.log("Error getting documents: ", error);
-    //     });
-    // }
   },
   computed: {
     ...mapGetters(["getUserState", "isUserAuth"])

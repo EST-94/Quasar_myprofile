@@ -54,3 +54,16 @@ See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js
 https://www.youtube.com/watch?v=la-0ulfn0_M&list=PL99KBMJE17JwsU5Ugi-uqkxSD6Jf0Cj4G&index=13&ab_channel=freeCodeCamp.org
 
 (Source Code : https://github.com/dannyconnell/qwitter)
+
+
+
+## Patch note
+
+# ver 1.0
+- basic design, CRUD with firebase
+
+# ver 1.3
+- signin / signout avaliable.
+
+# ver 1.31
+- connected with my AWS server (SMS API)

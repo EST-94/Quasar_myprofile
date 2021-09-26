@@ -3,7 +3,6 @@
 
 function send_message(contect, contents) {
 	// 차후 파라미터 안에 phone, nickname 넣어 보내는사람 핸드폰번호 받기
-    // 예약자 번호, 닉네임, 코인이름
     const user_phone_number = contect;
     const user_nickname = "devitter_test";
     const user_contents = contents;
