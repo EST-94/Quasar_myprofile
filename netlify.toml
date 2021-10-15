@@ -2,7 +2,7 @@
 
 [[redirects]]
   from = "/aws/getList"
-  to = "https://devitter.com:3000/aws/getList"
+  to = "https://devitter.com/aws/getList"
   status = 302
   headers = {X-From = "Netlify"}
   force = true
