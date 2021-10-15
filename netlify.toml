@@ -1,7 +1,8 @@
 [build]
 
 [[redirects]]
-  from = "/proxy/*"
-  to = "https://devitter.com/aws/getList:splat"
-  status = 301
+  from = "/aws"
+  to = "https://devitter.com/:splat"
+  status = 200
+  headers = {X-From = "Netlify"}
   force = true
