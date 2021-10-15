@@ -1,8 +1,8 @@
 [build]
 
 [[redirects]]
-  from = "https://devitter.netlify.app/aws"
-  to = "https://devitter.com/:splat"
+  from = "https://devitter.netlify.app/aws/getList"
+  to = "https://devitter.com/aws/getList:splat"
   status = 200
   headers = {X-From = "Netlify"}
   force = true
