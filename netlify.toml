@@ -2,6 +2,6 @@
 
 [[redirects]]
   from = "/proxy/*"
-  to = "https://devitter.com:splat"
+  to = "https://devitter.com/aws/getList:splat"
   status = 301
   force = true
