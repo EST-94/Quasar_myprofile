@@ -4,23 +4,12 @@
       <div class="col">
         <h5 class="">Welcome!</h5>
         <h6> you need to fill the blanks of '*'. </h6>
-        <q-input 
-        bottom-slots 
-        class="new-devitt"
-        v-model="DevitterId" 
-        placeholder="*ID (email address)" 
-        autogrow
-        >
+        <q-input bottom-slots class="new-devitt" v-model="DevitterId" placeholder="*ID (email address)" autogrow>
         </q-input>
-        <q-input 
-        bottom-slots 
-        class="new-devitt"
-        v-model="DevitterPw" 
-        placeholder="*Password" 
-        autogrow
-        type="password"
-        >
+        
+        <q-input bottom-slots class="new-devitt" v-model="DevitterPw" placeholder="*Password" type="password" >
         </q-input>
+
         <q-input 
         bottom-slots 
         class="new-devitt"

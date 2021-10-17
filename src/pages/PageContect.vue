@@ -62,6 +62,8 @@ export default defineComponent({
   setup() {
     const axios = require('axios');
     const $q = useQuasar()
+    // const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy'
+    // const testURL = '${PROXY}/aws/getList'
 
     var newDeviContent = ref('')
     var contect = ref('')
@@ -125,9 +127,10 @@ export default defineComponent({
     }
     
     let proxyRequest = () => {
-      axios.get("/aws/getList")
+      axios.get('/aws/getList')
       .then((res) => {
         console.log("proxy req : ", res)
+        res
       })
       .catch((err) => {
         console.log("proxy req error : ", err)

@@ -1,29 +1,14 @@
 <template>
   <q-page 
-  class="q-pa-lg"
-  v-if="loginState == 'false'"
-  >
-      <div class="q-py-lg q-px-md row items-end q-col-gutter-md"
-      >
+  class="q-pa-lg" v-if="loginState == 'false'">
+      <div class="q-py-lg q-px-md row items-end q-col-gutter-md">
       <div class="col">
         <h5 class="">Welcome!</h5>
-        <q-input 
-        bottom-slots 
-        class="new-devitt"
-        v-model="DevitterId" 
-        placeholder="ID (email address)" 
-        autogrow
-        >
+        <q-input bottom-slots class="new-devitt" v-model="DevitterId" placeholder="ID (email address)" autogrow>
         </q-input>
-        <q-input 
-        bottom-slots 
-        class="new-devitt"
-        v-model="DevitterPw" 
-        placeholder="Password" 
-        autogrow
-        type="password"
-        >
+        <q-input bottom-slots class="new-devitt" v-model="DevitterPw" placeholder="Password" type="password" >
         </q-input>
+
           <q-checkbox v-model="remember" label="Remember this account info?" color="blue"/>
 
           <q-btn 
@@ -56,12 +41,8 @@
   </q-page>
 
 
-  <q-page 
-  class="q-pa-lg"
-  v-if="loginState != 'false'"
-  >
-      <div class="q-py-lg q-px-md row items-end q-col-gutter-md"
-      >
+  <q-page class="q-pa-lg" v-if="loginState != 'false'">
+      <div class="q-py-lg q-px-md row items-end q-col-gutter-md">
       <div class="col">
         <h5 class="">See u soon!</h5>
           <q-btn 
@@ -181,7 +162,7 @@ export default defineComponent({
         })
       }
 
-      return {DevitterId, DevitterPw, userEmail, userName, 
+      return {DevitterId, DevitterPw, userEmail, userName,
               loginState, remember, signin, signout, validate}
   },
   computed: {
