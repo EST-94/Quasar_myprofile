@@ -7,8 +7,8 @@ const routes = [
       { path: '', component: () => import('src/pages/PageHome.vue'),
         name: 'Home'
     },
-      { path: '/about', component: () => import('src/pages/PageAbout.vue'),
-        name: 'About'
+      { path: '/about', component: () => import('src/pages/PageLog.vue'),
+        name: 'Devitter Patch log'
     },
       { path: '/contect', component: () => import('src/pages/PageContect.vue'),
         name: 'Send DM'
