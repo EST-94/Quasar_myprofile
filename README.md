@@ -68,5 +68,5 @@ https://www.youtube.com/watch?v=la-0ulfn0_M&list=PL99KBMJE17JwsU5Ugi-uqkxSD6Jf0C
 # ver 1.31
 - connected with my AWS server (in local only, SMS API)
 
-# ver 1.31
+# ver 1.33
 - "About page" established, modals for signs page and serverless API with netlify/cli on progressing.
