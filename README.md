@@ -33,7 +33,7 @@ npm install
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
-quasar dev
+quasar dev / netlify dev
 ```
 
 ### Lint the files
@@ -59,11 +59,14 @@ https://www.youtube.com/watch?v=la-0ulfn0_M&list=PL99KBMJE17JwsU5Ugi-uqkxSD6Jf0C
 
 ## Patch note
 
-### ver 1.0
+# ver 1.0
 - basic design, CRUD with firebase
 
-### ver 1.3
+# ver 1.3
 - signin / signout avaliable.
 
-### ver 1.31
-- connected with my AWS server (SMS API, still avaliable in local)
+# ver 1.31
+- connected with my AWS server (in local only, SMS API)
+
+# ver 1.31
+- "About page" established, modals for signs page and serverless API with netlify/cli on progressing.
