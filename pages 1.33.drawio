@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2021-10-17T09:43:21.522Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="_YKEQRnHZ_rfK6Hn_Gtw" version="15.5.4" type="github">
+  <diagram id="eOel0SePn4s6ZXPDbDwN" name="Page-1">
+    <mxGraphModel dx="813" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IJuLCxkALymJVE2eTbHI-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190" y="340" width="150" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-3" value="Layout.vue" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="225" y="330" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-4" value="Home&lt;br&gt;(PageHome.vue)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="380" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-5" value="About&lt;br&gt;(PageLog.vue)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="430" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-6" value="DirectContect&lt;br&gt;(PageContect.vue)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="480" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-13" value="HomePage" style="swimlane;fillColor=#fff2cc;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="170" y="280" width="190" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-7" value="Sign in / out&lt;br&gt;(PageSigns.vue)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IJuLCxkALymJVE2eTbHI-13">
+          <mxGeometry x="42.5" y="250" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-8" value="Modal&lt;br&gt;(Layout.vue)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IJuLCxkALymJVE2eTbHI-13">
+          <mxGeometry x="42.5" y="300" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-14" value="My AWS server" style="swimlane;fillColor=#fff2cc;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="410" y="340" width="190" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=none;" vertex="1" parent="IJuLCxkALymJVE2eTbHI-14">
+          <mxGeometry x="20" y="60" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-15" value="Portfolio&lt;br&gt;(ip address:3000)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IJuLCxkALymJVE2eTbHI-14">
+          <mxGeometry x="35" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-16" value="Other API&lt;br&gt;(on progressing)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IJuLCxkALymJVE2eTbHI-14">
+          <mxGeometry x="35" y="140" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-18" value="proxy.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=none;" vertex="1" parent="IJuLCxkALymJVE2eTbHI-14">
+          <mxGeometry x="55" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IJuLCxkALymJVE2eTbHI-5" target="IJuLCxkALymJVE2eTbHI-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="389.71" as="sourcePoint" />
+            <mxPoint x="400" y="389.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-20" value="Personal Page btn" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="IJuLCxkALymJVE2eTbHI-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IJuLCxkALymJVE2eTbHI-6" target="IJuLCxkALymJVE2eTbHI-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="500" as="sourcePoint" />
+            <mxPoint x="477.5" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IJuLCxkALymJVE2eTbHI-22" value="Send msg btn" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="IJuLCxkALymJVE2eTbHI-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
