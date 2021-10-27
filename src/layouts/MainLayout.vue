@@ -71,7 +71,7 @@
           </q-item-section>
 
           <q-item-section class="text-h6
-            text-weight-bold">Direct Contect (progressing)
+            text-weight-bold">Direct Contact (progressing)
           </q-item-section>
         </q-item>
 
